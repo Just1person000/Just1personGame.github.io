@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>.- --. .-. .-</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="img/logo.jpg">
+</head>
+<body>
+	<div class="bg"></div>
+	<div class="game">
+		<div class="character">
+			<p>Имя: <span id="name"></span></p>
+			<p>Здоровье: <span id="health"></span></p>
+			<p>Деньги: <span id="cash"></span></p>
+			<p>Состояние: <span id="status"></span></p>
+			<p>Энергия: <span id="engargy"></span></p>
+			<p>Местоположение: <span id="gps"></span></p>
+			<p>Мощь: <span id="power"></span></p>
+			<p>Фракция: <span id="fraction"></span></p>
+
+
+            <button class="Inventory"  onclick=" showInventory()">Inventory</button>
+		     <div class="Inventory_window">
+		    <div class="Inventory_text">
+		    	<p>Обычные кристалы: <span id="monsterСrystal_common"></span></p>
+		    	<p>Редкие кристалы: <span id="monsterСrystal_rare"></span></p>
+		    	<p>Мистические кристалы: <span id="monsterСrystal_Mystical"></span></p>
+		    	<p>Легендарные кристалы: <span id="monsterСrystal_Legendary"></span></p>
+		    	<p>Жрачка: <span id="food"></span></p>
+
+
+		    </div>
+
+		
+	            </div>
+		</div>
+		<div class="img"></div>
+	</div>
+
+	<div class="action actionInTown">
+		<button onclick="inHospital()">Сходить в больницу</button>
+		<button onclick="inTavern()">Посетить таверну</button>
+		<button onclick="inMarket()">Зайти на рынок 'Драконье Пёрышко'</button>
+		<button onclick="work()">Найти работy</button>
+		<button onclick="exit()">Покинуть город</button>
+	</div>
+
+	<div class="action actionInTavern">
+		<button onclick="drink()">Выпить</button>
+		<button onclick="eat()">Поесть</button>
+		<button onclick="chill()">Снять комнату</button>
+		<button onclick="fight()">Устроить драку</button>
+		<button onclick="inTown()">Вернуться в город</button>
+	</div>
+	<div class="action actionInMarket">
+		<button onclick="buy()">Купить</button>
+		<button onclick="sell()">Продать</button>
+		<button onclick="TaskThievesKill()">Взять задание на уничтожение воришек</button>
+		<button onclick="ThievesYou()">Поворовать у прохожих</button>
+		<button onclick="inTown()">Вернуться в город</button>
+	</div>
+      <div class="action actionInFork">
+		<button onclick="inforest()">Пойти в лес</button>
+		<button onclick="ThievesJoined()">Присоедениться к воришкам</button>
+		<button onclick="inVillage()">Пойти в деревню Лесная Заря</button>
+		<button>(В разработке)</button>
+		<button onclick="inTown()">Вернуться в город</button>
+	</div> 
+	    <div class="action actionInForest">
+		<button onclick="monst_forest_fight()">Сражаться с монстрами</button>
+		<button>(В разработке)</button>
+		<button>(В разработке)</button>
+		<button>(В разработке)</button>
+		<button onclick="exit()">Обратно на развилку</button>
+	    </div>     
+        <div class="action actionInVillage">
+		<button id="message" onclick="buyHome()">Купить дом</button>
+		<button>(В БУДУЩЕМ)</button>
+		<button>(В БУДУЩЕМ)</button>
+		<button>Пойти на северную дорогу (В БУДУЩЕМ)</button>
+		<button onclick="exit()">Обратно на развилку</button>
+	    </div>
+	    <div class="action actionInHome">
+		<button onclick="chillHome()">Поспать</button>
+		<button>Крафтить (В БУДУЩЕМ)</button>
+		<button>(Что то будет)</button>
+		<button onclick="eatInHome()">Поесть</button>
+		<button onclick="exitHome()">Выйти из дома</button>
+	    </div>        
+               
+
+
+
+
+
+
+
+ 	
+
+
+
+
+
+
+
+
+	<script src="script.js"></script>
+</body>
+</html>
